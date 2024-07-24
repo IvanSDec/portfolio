@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+button{
+	border: none;
+	background: none;
+}
+
+.animation_initial {
+	background: linear-gradient(45deg, #000000, #ffffff);
+	background-size: 400% 400%;
+	animation: animation_initial 18s ease infinite;
+}
+
+@keyframes animation_initial {
+	0% {
+	  	background-position: 0% 0%;
+	}
+	50% {
+	 	background-position: 100% 100%;
+	}
+	100% {
+	  	background-position: 0% 0%;
+	}
+}
